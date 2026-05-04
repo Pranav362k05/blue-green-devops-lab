@@ -1,5 +1,6 @@
 # 🚀 Blue-Green Deployment using DevOps Tools
 
+---
 ## 📌 Project Overview
 This project demonstrates the implementation of a **Blue-Green Deployment strategy** using modern DevOps tools on a cloud-based infrastructure.
 
@@ -77,12 +78,15 @@ kubectl get svc
 ```bash
 http://<EC2-Public-IP>:30007
 ```
+---
 
 ### 🔁 Blue-Green Deployment Concept
 # Environment  	Description
 Blue          	Current running version
 Green          	New version to be deployed
 Switch        	Update service to point to Green
+
+---
 
 ### 📊 Verification
 ```bash
@@ -91,17 +95,23 @@ kubectl get svc
 kubectl describe service myapp-service
 ```
 
+---
+
 ### ⚠️ Challenges Faced
 Minikube memory constraints on EC2
 Docker disk space warnings
 NodePort not accessible initially (network/security configs)
 Git nested repository issue during upload
 
+---
+
 ### ✅ Outcome
 Successfully deployed application using Kubernetes
 Implemented Blue-Green deployment strategy
 Verified service exposure via NodePort
 Uploaded project to GitHub
+
+---
 
 ### 📌 Future Improvements
 Add Green deployment YAML
